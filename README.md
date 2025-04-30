@@ -27,7 +27,7 @@ An intelligent voice assistant for Kinyarwanda language interaction, developed a
 ## Installation 💻
 
 ### Prerequisites
-- Python 3.8+
+- Python 3.12
 - FFmpeg (audio processing):
   ```bash
   # Ubuntu/Debian
