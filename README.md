@@ -38,3 +38,45 @@ An intelligent voice assistant for Kinyarwanda language interaction, developed a
   
   # Windows (via chocolatey)
   choco install ffmpeg
+  ```
+  
+## Quick Start 🚀
+
+- Clone repository
+  ```bash
+    git clone https://github.com/Chiesa14/KinyarwandaVoiceAssistant.git
+  
+    cd kinyarwanda-voice-assistant
+  ```
+- Set up virtual environment
+  ```bash
+  python -m venv .venv
+  source .venv/bin/activate  # Linux/macOS
+  .\.venv\Scripts\activate   # Windows
+
+  ```
+- Install dependencies
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+## Configuration ⚙️
+
+#### QA Configuration in `nlp_mapping.json`
+
+  ```json
+  {
+    "qa_pairs": [
+      {
+        "question": "Mwaramuce neza?",
+        "answer": "Mwaramutse! Amakuru yanyu?"
+      }
+    ],
+    "default_response": "Vugurura ikibazo."
+  }
+  ```
+
+#### Audio Files
+You can find sample Kinyarwanda recordings in the `/sample_inputs` folder
+
+Supported formats: `WAV`, `MP3`, `OGG`
