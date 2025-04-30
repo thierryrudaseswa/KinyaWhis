@@ -19,6 +19,10 @@
         {
             "question": "Uzi ikinyarwanda neza?",
             "answer": "Yego, ngerageza kukivuga!"
+        },
+        {
+             "question": "Umeze neza?",
+            "answer": "Yego! Turashima Imana."
         }
     ],
     "default_response": "Mwihangane! Muhindure ikibazo"
