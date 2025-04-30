@@ -45,7 +45,6 @@ An intelligent voice assistant for Kinyarwanda language interaction, developed a
 - Clone repository
   ```bash
     git clone https://github.com/Chiesa14/KinyarwandaVoiceAssistant.git
-  
     cd KinyarwandaVoiceAssistant
   ```
 - Set up virtual environment
