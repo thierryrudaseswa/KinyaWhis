@@ -1,0 +1,4 @@
+.gradio/
+.venv/
+audio_inputs/
+audio_outputs/

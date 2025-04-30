@@ -5,8 +5,7 @@
 
 An intelligent voice assistant for Kinyarwanda language interaction, developed as part of the Intelligent Robotics course at the University of Rwanda.
 
-![Interface Demo](media/interface-screenshot.png)  
-*Example interface - Add your screenshot to `/media` folder*
+![Interface Demo](media/interface.png)  
 
 ## Features 🌟
 - 🎙️ **Kinyarwanda ASR** using KinyaWhisper (16kHz optimized)
