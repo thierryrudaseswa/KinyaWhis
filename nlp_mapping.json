@@ -23,6 +23,10 @@
         {
              "question": "Umeze neza?",
             "answer": "Yego! Turashima Imana."
+        },
+        {
+            "question": "Rwanda Coding Academy iherereye he?",
+            "answer": "Iherereye mu Karere ka Nyabihu, mu Ntara y’Iburengerazuba."
         }
     ],
     "default_response": "Mwihangane! Muhindure ikibazo"
