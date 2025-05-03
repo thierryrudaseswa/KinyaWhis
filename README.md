@@ -5,24 +5,35 @@
 
 An intelligent voice assistant for Kinyarwanda language interaction, developed as part of the Intelligent Robotics course.
 
-![Interface Demo](media/interface.png)  
 
-## Features 🌟
-- 🎙️ **Kinyarwanda ASR** using KinyaWhisper (16kHz optimized)
-- 🧠 **Contextual Understanding** with fuzzy logic matching
-- 📢 **Natural Responses** with Kinyarwanda TTS
-- 🔇 **Noise Reduction** using advanced audio cleaning
-- 🎚️ **Voice Activity Detection** for precise speech recognition
-- 🔄 **Anti-Repetition** transcription filters
-- 📊 **Conversation Analytics** with matching insights
-- 🌐 **Web Interface** with Gradio integration
 
-## Tech Stack 🛠️
-- **Core AI**: Hugging Face Transformers
-- **Audio Processing**: Librosa + Soundfile
-- **NLP**: FuzzyWuzzy + Python-Levenshtein
-- **Interface**: Gradio
-- **Optimization**: WebRTC VAD + Noisereduce
+🌟 Key Features
+🎙️ Kinyarwanda Speech Recognition: Built on KinyaWhisper, fine-tuned for 16kHz audio.
+
+🧠 Smart Understanding: Uses fuzzy logic for flexible and context-aware question matching.
+
+📢 Natural Kinyarwanda Responses: Speech output generated via Kinyarwanda TTS.
+
+🔇 Clean Audio Input: Enhanced noise reduction ensures clearer speech detection.
+
+🎚️ Accurate Detection: Employs Voice Activity Detection (VAD) for precise speech segmentation.
+
+🔄 Repetition Filtering: Eliminates redundant transcriptions for smoother results.
+
+📊 Insightful Analytics: Visualize matched queries and system behavior.
+
+🌐 User-Friendly Interface: Seamless interaction through a web app powered by Gradio.
+
+🛠️ Technology Stack
+AI Backbone: Hugging Face Transformers
+
+Audio Handling: Librosa + SoundFile
+
+Language Processing: FuzzyWuzzy & Python-Levenshtein for similarity scoring
+
+Frontend Interface: Gradio
+
+Performance Enhancements: WebRTC-based VAD & NoiseReduce for real-time optimization
 
 ## Installation 💻
 
@@ -44,62 +55,29 @@ An intelligent voice assistant for Kinyarwanda language interaction, developed a
 
 - Clone repository
   ```bash
-    git clone https://github.com/Chiesa14/KinyarwandaVoiceAssistant.git
+    git clone https://github.com/thierryrudaseswa/KinyaWhis.git
     cd KinyarwandaVoiceAssistant
-  ```
-- Set up virtual environment
-  ```bash
-  python -m venv .venv
-  source .venv/bin/activate  # Linux/macOS
-  .\.venv\Scripts\activate   # Windows
+  ```# Create a virtual environment
+python -m venv .venv
 
-  ```
-- Install dependencies
-  ```bash
-  pip install -r requirements.txt
-  ```
+# Activate the virtual environment
+# For Linux/macOS:
+source .venv/bin/activate
 
-## Configuration ⚙️
+# For Windows:
+.venv\Scripts\activate
+pip install -r requirements.txt
 
-#### QA Configuration in `nlp_mapping.json`
+{
+  "qa_pairs": [
+    {
+      "question": "Mwaramuce neza?",
+      "answer": "Mwaramutse! Amakuru yanyu?"
+    }
+  ],
+  "default_response": "Vugurura ikibazo."
+}
 
-  ```json
-  {
-    "qa_pairs": [
-      {
-        "question": "Mwaramuce neza?",
-        "answer": "Mwaramutse! Amakuru yanyu?"
-      }
-    ],
-    "default_response": "Vugurura ikibazo."
-  }
-  ```
-
-#### Audio Files
-You can find sample Kinyarwanda recordings in the `/sample_inputs` folder
-
-Supported formats: `WAV`, `MP3`, `OGG`
-
-
-## Usage 🚀
-
-#### Start the application
-  ```bash
-  python main.py
-  ```
-
-#### Access the interface
-- Navigate to http://localhost:7860
-
-## Interface Guide 💡
-1. Record using your microphone or upload an audio file
-1. Click **Submit** to process (⏳ ~10–60 sec)
-1. Response audio auto-plays
-1. Review **Conversation History**:
-   - Raw transcription
-   - Matched question key
-   - Generated response
-1. Click **Clear** to reset session
 
 ## Example Interactions 🗣️
 | Raw Transcription | Matched Question | System Response                                              |
