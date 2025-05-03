@@ -105,4 +105,3 @@ Supported formats: `WAV`, `MP3`, `OGG`
 | Raw Transcription | Matched Question | System Response                                              |
 |-------------------|-----------|--------------------------------------------------------------|
 | mizeneza          |Umeze neza?| Yego! Turashima Imana.                                       |
-| wakorewee heheh   |Wakorewe hehe?| Nakorewe muri Rwanda Coding Academy, nakozwe na Remy Chiesa. |
